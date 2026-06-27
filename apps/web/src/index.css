@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 222 33% 7%;
+  --bg-2: 222 28% 10%;
+  --surface: 220 22% 13%;
+  --surface-2: 220 20% 17%;
+  --border: 220 15% 22%;
+  --fg: 40 30% 96%;
+  --muted: 220 10% 65%;
+  --accent: 18 96% 56%;
+  --accent-2: 22 100% 62%;
+
+  --background: var(--bg);
+  --foreground: var(--fg);
+  --card: var(--surface);
+  --card-foreground: var(--fg);
+  --popover: var(--surface);
+  --popover-foreground: var(--fg);
+  --primary: var(--accent);
+  --primary-foreground: 30 40% 98%;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--fg);
+  --muted-foreground: var(--muted);
+  --accent-foreground: var(--fg);
+  --destructive: 0 70% 55%;
+  --destructive-foreground: 0 0% 98%;
+  --input: var(--border);
+  --ring: var(--accent);
+  --radius: 0.875rem;
+}
+
+* { border-color: hsl(var(--border)); }
+
+html, body, #root {
+  background: hsl(var(--bg));
+  color: hsl(var(--fg));
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: clip;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, hsla(18,96%,56%,0.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, hsla(220,80%,45%,0.10), transparent 60%),
+    hsl(var(--bg));
+}
+
+.font-display { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; }
+.font-script  { font-family: 'Caveat', cursive; }
+
+.glass {
+  background: linear-gradient(180deg, hsla(220,22%,18%,0.6), hsla(220,22%,12%,0.55));
+  border: 1px solid hsla(220,20%,80%,0.08);
+  backdrop-filter: blur(10px);
+}
+.glass-strong {
+  background: linear-gradient(180deg, hsla(220,22%,20%,0.85), hsla(220,22%,12%,0.75));
+  border: 1px solid hsla(220,20%,80%,0.10);
+  backdrop-filter: blur(14px);
+}
+
+.grain::before {
+  content: "";
+  position: absolute; inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee { animation: marquee 38s linear infinite; }
+
+@keyframes float-slow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-slow { animation: float-slow 6s ease-in-out infinite; }
+
+.highlight-underline {
+  background-image: linear-gradient(120deg, hsla(18,96%,56%,0.85), hsla(18,96%,56%,0.85));
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.35em;
+  padding: 0 0.08em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee, .float-slow { animation: none; }
+}

@@ -1,0 +1,31 @@
+## 2026-06-27 12:13:42.424Z load
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+
+## 2026-06-27 12:13:43.108Z navigate
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+- via: replaceState
+
+## 2026-06-27 12:13:44.725Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"HR-compliant · SOC 2 in progress · Used by 240+ People Ops teamsZero-MaintenanceOffice Poolsno spreadsheets!Set up in 60 seconds. Scoring runs itself, Slack stays in the loop, and HR sleeps at night.Start a Pool Free 14-day pilot · No card required · Cancel inside Slack60sAverage setup time94%Employee participation0Spreadsheets needed12+Native integrations"}
+
+## 2026-06-27 12:14:43.338Z load
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+
+## 2026-06-27 12:14:43.997Z navigate
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+- via: replaceState
+
+## 2026-06-27 12:17:38.127Z load
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+
+## 2026-06-27 12:17:38.766Z navigate
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+- via: replaceState
+
+## 2026-06-27 12:25:56.783Z load
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+
+## 2026-06-27 12:25:57.415Z navigate
+- url: https://477aa192-5d68-4d3c-aa38-c87285803d14.app-preview.com/#pricing
+- via: replaceState
+
