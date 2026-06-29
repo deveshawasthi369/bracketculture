@@ -977,3 +977,7 @@
 ## 2026-06-29 16:18:58.581Z load
 - url: https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--3000--29a3b5f7.local-credentialless.webcontainer-api.io/
 
+## 2026-06-29 16:18:59.209Z navigate
+- url: https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--3000--29a3b5f7.local-credentialless.webcontainer-api.io/
+- via: replaceState
+
